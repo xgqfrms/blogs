@@ -1,0 +1,89 @@
+.sec_div{
+  /*box-sizing: border-box;*/
+  background-color:#000000;
+  padding-left: 5px;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #00ff00;
+  border: 1px solid red; }
+.sec_div li{
+	font-size: 23px;
+	color: #0000ff;
+}
+.sec_img{
+  border: 1px dash green;
+  padding: 0;
+  margin: 2%;
+  width:96%;
+  height:90%; }
+legend{
+	font-size: 20px;
+	color: #0000ff;	
+	display:block;
+}
+legend:hover{
+	display:block;
+	font-size: 20px;
+	color: #ff0000;
+	-webkit-transform:translate(100px,20px);
+	-webkit-transform:rotate(360deg);
+	-webkit-transform:scale(2,2);
+	-webkit-transition:(all 1s ease 0);
+	
+	transform:translate(100px,20px);
+	transform:rotate(360deg);
+	transform:scale(2,2);
+	transition:(all 1s ease 0);
+	
+	-moz-transform:translate(100px,20px);
+	-moz-transform:rotate(360deg);
+	-moz-transform:scale(2,2);
+	-moz-transition:(all 1s ease 0);
+	
+	-ms-transform:translate(100px,20px);
+	-ms-transform:rotate(360deg);
+	-ms-transform:scale(2,2);
+	-ms-transition:(all 1s ease 0);
+	
+	-o-transform:translate(100px,20px);
+	-o-transform:rotate(360deg);
+	-o-transform:scale(2,2);
+	-o-transition:(all 1s ease 0);
+	
+	/*tips:blog 摘要信息
+	-moz-transform:
+	-o-transform:
+	-ms-transform: 
+	*/
+}
+.l_tips{
+	display:block;
+	visibility:hidden;
+}
+l._tips:hover{
+	display:block;
+	visibility:visible;
+	font-size: 20px;
+	color: #ff0000;
+	/*tips:blog 摘要信息*/
+}
+p::selection {
+    background: #ff00ff;
+    font-size: 32px;
+    color: #00ff0f;
+}
+pre::selection {
+    background: #ff00ff;
+    font-size: 32px;
+    color: #00ff0f;
+}
+
+
+
+
+
+
+
+
