@@ -4,8 +4,5 @@ This a personal blogs powered by GitHub which is the freest place to share views
 ***
 ***
 
-* [Emoji](http://www.emoji-cheat-sheet.com/)
-
-
-* /play trombone
+* [Emoji: http://www.emoji-cheat-sheet.com/](http://www.emoji-cheat-sheet.com/)
 
