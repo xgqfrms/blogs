@@ -9,6 +9,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/new_css.css" media="screen">
+	<!-- 如需要实时推送消息功能，请先引用客户端的socket库 -->
+    <script type="text/javascript" src="http://7xl3wn.com2.z0.glb.qiniucdn.com/socket.io.min.js"></script>
+	<script type="text/javascript" src="http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js"></script>
+	<style type="text/css">
+	  .video_d{
+	    width: 640px;
+		height: 480px ;
+		background-color: #ffffff;
+	  }
+	</style>
   </head>
   <body>
     <section class="page-header">
@@ -27,70 +37,80 @@
 
 <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#" aria-hidden="true">
-<span class="octicon octicon-link">First Blog:</span></a>
+<span class="octicon octicon-link">?number Blog:</span></a>
 <span id="p_date">
-	Published Date: 2016-01-01
+	Published Date: 2016-01-10
 </span><br/>
-Why Google is more better than Baidu in term of Search Engine!
+ASP.NET & Virtual Studio shortcut key!
 </h3>
 
 <div class="sec_div">
   <ol>
-  <li><header>google 的搜索结果:</header></li>
-  <p>准确，客观，真实！正是你所要找的信息！</p>
-  <img src="images/cnblogs-google.PNG" alt="cnblogs-google.png" class="sec_img"></img>
-  <li><header>baidu 的搜索结果:</header></li>
-  <p>错误，主观，虚假！不是你所要找的东西，完全就是广告，垃圾信息！</p>
-  <img src="images/cnblogs-baidu.PNG" alt="cnblogs-baidu.png" class="sec_img"></img>
+  <li><header>Visual Studio 快捷键 :</header></li>
+  <a id="welcome-to-github-pages" class="anchor" href="http://xgqfrms.github.io/blogs/" aria-hidden="true">
+  <span class="octicon octicon-link">?link Blog:</span>
+  </a>
+  <pre>
+  <p>
+Visual Studio常用快捷键:
+</p>
+</pre>
+  <!--
+   <img src="images/cnblogs-google.PNG" alt="cnblogs-google.png" class="sec_img"></img>
+   <img src="images/cnblogs-baidu.PNG" alt="cnblogs-baidu.png" class="sec_img"></img>
+  -->
+  <li><header>video :</header></li>
+  <a id="welcome-to-github-pages" class="anchor" href="http://xgqfrms.github.io/blogs/" aria-hidden="true">
+  <span class="octicon octicon-link">video:</span>
+  </a>
+  <p>video</p>
   </ol>
-</div>
+  <div class="video_d" id="video_d">
+      
+  </div>
+  <script>
+  /**
 
-<div class="sec_div">
-  <ol>
-  <li><header>google搜索baidu:</header></li>
-  <p>google 的搜索结果：准确，客观,介绍信息丰富！</p>
-  <img src="images/google-baidu.PNG" alt="google-baidu.PNG" class="sec_img"></img>
-  <li><header>baidu搜索google:</header></li>
-  <p>baidu 的搜索结果：主观，介绍信息极少！侧边栏很多广告，垃圾信息！</p>
-  <img src="images/baidu-google.PNG" alt="baidu-google.PNG" class="sec_img"></img>
-  </ol>
-</div>
+*创建Iva实例，以下参数值是时间的均以秒为单位
 
-<!--disqus universal code-->
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    
-    var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//x-ray.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-<!--disqus universal code-->
+*/
+
+var ivaInstance = new Iva(
+ 'video_d',//父容器id或者父容器DOM对象，给父容器设置宽高640px*480px以上可以获得最佳的浏览体验；如果宽高在640px*480px以下，Iva会以弹窗形式呈现
+ {
+   appkey: '应用标识',//必填，请在控制台查看应用标识
+   live: false,//选填，是否是直播流，默认为false
+   video: 'https://vimeo.com/159321506',//必填，播放地址（http://www.tudou.com/programs/view/tM_vZCQy2uM/）或者资源地址（http://7xi4ig.com2.z0.glb.qiniucdn.com/shapuolang_ts.mp4）
+   title: '小视频',//选填，视频标题
+   cover: 'https://github.com/xgqfrms/blogs/blob/gh-pages/images/logo.png',//选填，视频封面url
+   videoStartPrefixSeconds: 0,//选填，跳过片头，默认为0
+   videoEndPrefixSeconds: 0,//选填，跳过片尾，默认为0
+   /* 以下参数可以在“控制台->项目看板->应用管理->播放器设置”进行全局设置，前端设置可以覆盖全局设置 */
+   skinSelect: 0,//选填，播放器皮肤，可选0、1、2，默认为0，
+   autoplay: false,//选填，是否自动播放，默认为false
+   rightHand: true,//选填，是否开启右键菜单，默认为false
+   autoFormat: false,//选填，是否自动选择最高清晰度，默认为false
+   bubble: true,//选填，是否开启云泡功能，默认为true
+   jumpStep: 10,//选填，左右方向键快退快进的时间
+   tagTrack: false,//选填，云链是否跟踪，默认为false
+   tagShow: false,//选填，云链是否显示，默认为false
+   tagDuration: 5,//选填，云链显示时间，默认为5秒
+   tagFontSize: 16//选填，云链文字大小，默认为16像素
+ }
+);
+  </script>
+</div>
 <h1>
 <span>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>
-<a id="welcome-to-github-pages" class="anchor" href="http://xgqfrms.github.io/blogs/" aria-hidden="true">
-<span class="octicon octicon-link"><mark>Home:</mark></span></a>
+<a id="welcome-to-github-pages" class="anchor" href="009.html" aria-hidden="true">
+<span class="octicon octicon-link"><mark>Prev:</mark></span></a>
 <span>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span>
-<a id="welcome-to-github-pages" class="anchor" href="002.html" aria-hidden="true">
+<a id="welcome-to-github-pages" class="anchor" href="http://xgqfrms.github.io/blogs" aria-hidden="true">
 <span class="octicon octicon-link"><mark>Next:</mark></span></a>
 </h1>
 
@@ -101,8 +121,7 @@ Why Google is more better than Baidu in term of Search Engine!
       </footer>
 
     </section>
-<!--disqus universal code-->
-<script id="dsq-count-scr" src="//x-ray.disqus.com/count.js" async></script>
-<!--disqus universal code-->
+
+  
   </body>
 </html>
