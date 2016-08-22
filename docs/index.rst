@@ -65,7 +65,7 @@ Contents:
    :maxdepth: 1
    :caption: Questions? Suggestions?
 
-   Jupyter mailing list <https://groups.google.com/forum/#!forum/jupyter>
-   Jupyter website <https://jupyter.org>
-   Stack Overflow - Jupyter <https://stackoverflow.com/questions/tagged/jupyter>
-   Stack Overflow - Jupyter-notebook <https://stackoverflow.com/questions/tagged/jupyter-notebook>
+   xgqfrms mailing list <https://groups.google.com/forum/#!forum/xgqfrms>
+   xgqfrms website <https://xgqfrms.xyz>
+   Stack Overflow - xgqfrms <https://stackoverflow.com/questions/tagged/xgqfrms>
+   Stack Overflow - xgqfrms-notebook <https://stackoverflow.com/questions/tagged/xgqfrms-notebook>
