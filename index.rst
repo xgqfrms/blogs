@@ -5,7 +5,6 @@ index
 ========
 
 
-
 * [Edit it on GitHub](https://github.com/xgqfrms/blogs/blob/master/index.rst)
 
 * [Share URL](https://readthedocs.org/projects/xgqfrms-blogs/)
