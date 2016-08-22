@@ -13,3 +13,5 @@ index
 
 
 [reStructuredText(.rst)语法规则快速入门](http://blog.useasp.net/archive/2014/09/05/rst-file-restructuredtext-markup-syntax-quikstart.aspx)
+
+*  ./master/docs/index.rst 优先级高于  ./master/index.rst 
