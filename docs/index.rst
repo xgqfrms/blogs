@@ -21,3 +21,51 @@ Original Authors
     /home/docs/checkouts/readthedocs.org/user_builds/xgqfrms-blogs/checkouts/latest/README.rst file with your own content.
 
  If you want to use another markup, choose a different builder in your settings.
+
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Documentation
+
+   getting-started
+   howitworks
+   websecurity
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Configuration
+
+   config-examples
+   authenticators
+   spawners
+   troubleshooting
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Developer Documentation
+   
+   api/index
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Community documentation
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: About JupyterHub
+
+   changelog
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Questions? Suggestions?
+
+   Jupyter mailing list <https://groups.google.com/forum/#!forum/jupyter>
+   Jupyter website <https://jupyter.org>
+   Stack Overflow - Jupyter <https://stackoverflow.com/questions/tagged/jupyter>
+   Stack Overflow - Jupyter-notebook <https://stackoverflow.com/questions/tagged/jupyter-notebook>
