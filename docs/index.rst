@@ -1,4 +1,9 @@
-# just for test!
+Home  Page of Blogs Docs
+========================
+
+Original Authors
+===============
+* xgqfrms
 
 ## /home/docs/checkouts/readthedocs.org/user_builds/xgqfrms-blogs/checkouts/latest/index.rst
 
